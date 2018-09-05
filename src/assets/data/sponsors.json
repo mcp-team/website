@@ -2,6 +2,7 @@
     {
         "name": "McMaster Engineering Society",
         "description": "put desc here",
-        "url": "url goes here"
+        "url": "url goes here",
+        "type": "silver"
     }
 ]
