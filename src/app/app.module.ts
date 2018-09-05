@@ -5,15 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-//import { SponsorsViewComponent } from './components/sponsors-view/sponsors-view.component';
+import { SponsorsViewComponent } from './components/sponsors-view/sponsors-view.component';
 
 import { Html5UpService } from './services/Html5UpService/html5-up.service';
-//import { SponsorsService } from './services/SponsorsService/sponsors.service';
+import { SponsorsService } from './services/SponsorsService/sponsors.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //SponsorsViewComponent
+    SponsorsViewComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,7 @@ import { Html5UpService } from './services/Html5UpService/html5-up.service';
   ],
   providers: [
     Html5UpService,
-    //SponsorsService
+    SponsorsService
   ],
   bootstrap: [AppComponent]
 })
