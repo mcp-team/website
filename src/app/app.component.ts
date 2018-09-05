@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { Html5UpService } from './services/html5-up.service';
+import { Html5UpService } from './services/Html5UpService/html5-up.service';
 
 @Component({
   selector: 'app-root',

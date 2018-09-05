@@ -1,20 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { Html5UpService } from './services/html5-up.service';
+//import { SponsorsViewComponent } from './components/sponsors-view/sponsors-view.component';
+
+import { Html5UpService } from './services/Html5UpService/html5-up.service';
+//import { SponsorsService } from './services/SponsorsService/sponsors.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //SponsorsViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+
+    AppRoutingModule,
   ],
   providers: [
-    Html5UpService
+    Html5UpService,
+    //SponsorsService
   ],
   bootstrap: [AppComponent]
 })
