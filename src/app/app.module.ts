@@ -9,11 +9,13 @@ import { SponsorsViewComponent } from './components/sponsors-view/sponsors-view.
 
 import { Html5UpService } from './services/Html5UpService/html5-up.service';
 import { SponsorsService } from './services/SponsorsService/sponsors.service';
+import { AboutUsViewComponent } from './components/about-us-view/about-us-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SponsorsViewComponent
+    SponsorsViewComponent,
+    AboutUsViewComponent
   ],
   imports: [
     BrowserModule,
