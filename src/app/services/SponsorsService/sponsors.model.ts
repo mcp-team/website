@@ -11,4 +11,5 @@ export interface Sponsor {
     description: string;
     url: string;
     type: SponsorType;
+    logoUrl: string;
 }

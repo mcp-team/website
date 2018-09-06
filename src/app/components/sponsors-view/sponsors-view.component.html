@@ -1,3 +1,72 @@
-<p>
-  sponsors-view works!
-</p>
+
+<!-- Platinum Sponsors -->
+<section *ngIf="platinumSponsors">
+    <h2 class="align-center">Platinum Sponsors</h2>
+    <div class="row">
+        <div *ngFor="let sponsor of platinumSponsors" class="col-6 col-12-large">
+            <div class="box">
+                <a href="{{sponsor.url}}" class="image fit" target="blank"><img src="{{ sponsor.logoUrl }}" alt=""></a>
+                <h3>{{sponsor.name}}</h3>
+                <p>{{sponsor.description}}</p>
+                <ul class="actions">
+                    <li><a href="{{sponsor.url}}" class="button" target="blank">Visit</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gold Sponsors -->
+<section *ngIf="goldSponsors">
+    <h2 class="align-center">Gold Sponsors</h2>
+    <div class="row">
+        <div *ngFor="let sponsor of goldSponsors" class="col-4 col-12-large">
+            <div class="box">
+                <a href="{{sponsor.url}}" class="image fit" target="blank"><img src="{{ sponsor.logoUrl }}" alt=""></a>
+                <h3>{{sponsor.name}}</h3>
+                <p>{{sponsor.description}}</p>
+                <ul class="actions">
+                    <li><a href="{{sponsor.url}}" class="button" target="blank">Visit</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Silver Sponsors -->
+<section *ngIf="silverSponsors">
+    <h2 class="align-center">Silver Sponsors</h2>
+    <div class="row">
+        <div *ngFor="let sponsor of silverSponsors" class="col-3 col-12-medium">
+            <div class="box">
+                <a href="{{sponsor.url}}" class="image fit" target="blank"><img src="{{ sponsor.logoUrl }}" alt=""></a>
+                <h3>{{sponsor.name}}</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bronze Sponsors -->
+<section *ngIf="bronzeSponsors">
+    <h2 class="align-center">Bronze Sponsors</h2>
+    <div class="row">
+        <div *ngFor="let sponsor of bronzeSponsors" class="col-2 col-12-medium">
+            <div class="box">
+                <!--<a href="{{sponsor.link}}" class="image fit" target="blank">-->
+                    <img src="{{ sponsor.logoUrl }}" alt="">
+                <!--</a>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interested in Support -->
+<section>
+    <header class="align-center">
+        <h2>Interested in supporting us?</h2>
+    </header>
+    <ul class="actions special">
+        <li><a href="assets/sponsor-package-v2.pdf" target="blank" class="button big" style="margin-bottom: 10px;">View our Sponsorship Package</a></li>
+        <li><a href="#" class="button big primary" style="margin-bottom: 10px;">Sponsor Us!</a></li>
+    </ul>
+</section>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SponsorsService } from "src/app/services/SponsorsService/sponsors.service";
+import { Sponsor } from 'src/app/services/SponsorsService/sponsors.model';
 
 @Component({
   selector: 'sponsors-view',
@@ -8,9 +9,16 @@ import { SponsorsService } from "src/app/services/SponsorsService/sponsors.servi
 })
 export class SponsorsViewComponent implements OnInit {
 
+  public platinumSponsors: Sponsor[];
+  public goldSponsors: Sponsor[];
+  public silverSponsors: Sponsor[];
+  public bronzeSponsors: Sponsor[];
+
   constructor(private sponsors: SponsorsService) { }
 
   ngOnInit() {
+    let sponsorData = this.sponsors.getSponsorData();
+    this.platinumSponsors = sponsorData.platinum;
   }
 
 }
