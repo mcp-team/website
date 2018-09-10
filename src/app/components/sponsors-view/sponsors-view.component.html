@@ -1,6 +1,6 @@
 
 <!-- Platinum Sponsors -->
-<section *ngIf="platinumSponsors">
+<section *ngIf="platinumSponsors.length > 0">
     <h2 class="align-center">Platinum Sponsors</h2>
     <div class="row">
         <div *ngFor="let sponsor of platinumSponsors" class="col-6 col-12-large">
@@ -17,7 +17,7 @@
 </section>
 
 <!-- Gold Sponsors -->
-<section *ngIf="goldSponsors">
+<section *ngIf="goldSponsors.length > 0">
     <h2 class="align-center">Gold Sponsors</h2>
     <div class="row">
         <div *ngFor="let sponsor of goldSponsors" class="col-4 col-12-large">
@@ -34,7 +34,7 @@
 </section>
 
 <!-- Silver Sponsors -->
-<section *ngIf="silverSponsors">
+<section *ngIf="silverSponsors.length > 0">
     <h2 class="align-center">Silver Sponsors</h2>
     <div class="row">
         <div *ngFor="let sponsor of silverSponsors" class="col-3 col-12-medium">
@@ -47,7 +47,7 @@
 </section>
 
 <!-- Bronze Sponsors -->
-<section *ngIf="bronzeSponsors">
+<section *ngIf="bronzeSponsors.length > 0">
     <h2 class="align-center">Bronze Sponsors</h2>
     <div class="row">
         <div *ngFor="let sponsor of bronzeSponsors" class="col-2 col-12-medium">
