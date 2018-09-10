@@ -19,6 +19,9 @@ export class SponsorsViewComponent implements OnInit {
   ngOnInit() {
     let sponsorData = this.sponsors.getSponsorData();
     this.platinumSponsors = sponsorData.platinum;
+    this.goldSponsors = sponsorData.gold;
+    this.silverSponsors = sponsorData.silver;
+    this.bronzeSponsors = sponsorData.bronze;
   }
 
 }
