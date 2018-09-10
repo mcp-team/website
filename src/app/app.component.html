@@ -6,13 +6,15 @@
 
         <!-- Header Icons -->
         <ul class="icons header-icons">
-                <li><a href="#" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/groups/maccpt/" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-                <!--
-                <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
-                -->
+            <li><a href="https://www.facebook.com/groups/maccpt/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.github.com/mcp-team" class="icon fa-github" target="blank"><span class="label">GitHub</span></a></li>
+            <li><a routerLink="../contact-us" class="icon fa-envelope" target="blank"><span class="label">Email</span></a></li>
+            <!--
+            <li><a href="#" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+            -->
         </ul>
 
         <!-- Inner -->
@@ -28,7 +30,7 @@
 
             <!-- Logo -->
             <section class="alt" style="margin-bottom: 20px;">
-                <a href="/home">
+                <a routerLink="/home">
                     <span class="image fit"><img src="assets/images/MCP-LogoV1-GrayNoBox.png" alt="" /></span>
                 </a>
             </section>
@@ -36,16 +38,16 @@
             <!-- Menu -->
             <nav id="menu">
                 <ul>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/sponsors">Our Sponsors</a></li>
-                    <li><a href="#">Get Involved</a></li>
-                    <li><a href="#">Our Members</a></li>
+                    <li><a routerLink="about-us">About Us</a></li>
+                    <li><a routerLink="sponsors">Our Sponsors</a></li>
+                    <li><a routerLink="#">Get Involved</a></li>
+                    <li><a routerLink="#">Our Members</a></li>
                     <li>
                         <span class="opener">Learn</span>
                         <ul>
-                            <li><a href="/workshops">Workshops</a></li>
-                            <li><a href="/editorials">Editorials</a></li>
-                            <li><a href="/interview-prep">Interview Prep</a></li>
+                            <li><a routerLink="/workshops">Workshops</a></li>
+                            <li><a routerLink="/editorials">Editorials</a></li>
+                            <li><a routerLink="/interview-prep">Interview Prep</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -54,11 +56,8 @@
             <!-- Section -->
             <section>
                 <header>
-                    <a href="#" class="button primary fit">Contact Us</a>
+                    <a routerLink="contact-us" class="button primary fit">Contact Us</a>
                 </header>
-                <ul class="contact">
-                    <li class="fa-envelope-o"><a href="#">contact-us@mcp-team.com</a></li>
-                </ul>
             </section>
         </div>
     </div>
