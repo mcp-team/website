@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsViewComponent },
   { path: 'sponsors', component: SponsorsViewComponent },
   { path: 'contact-us', component: ContactUsViewComponent },
-  { path: 'members', component: DeadendViewComponent },
+  //{ path: 'members', component: DeadendViewComponent },
 ];
 
 @NgModule({
