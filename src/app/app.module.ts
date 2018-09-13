@@ -11,13 +11,15 @@ import { Html5UpService } from './services/Html5UpService/html5-up.service';
 import { SponsorsService } from './services/SponsorsService/sponsors.service';
 import { AboutUsViewComponent } from './components/about-us-view/about-us-view.component';
 import { DeadendViewComponent } from './components/deadend-view/deadend-view.component';
+import { ContactUsViewComponent } from './components/contact-us-view/contact-us-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SponsorsViewComponent,
     AboutUsViewComponent,
-    DeadendViewComponent
+    DeadendViewComponent,
+    ContactUsViewComponent
   ],
   imports: [
     BrowserModule,
