@@ -1,0 +1,35 @@
+<section style="padding-bottom: 10px; padding-top: 25px;">
+  <h1 style="text-align: center; font-size: 3.7em">Contact Us</h1>
+</section>
+<section>
+  <form method="POST" action="https://formspree.io/{{ email }}">
+    <div class="row gtr-uniform">
+      <div class="col-6 col-12-xsmall">
+        <input type="text" name="name" id="name" value="" placeholder="Name">
+      </div>
+      <div class="col-6 col-12-xsmall">
+        <input type="email" name="email" id="email" value="" placeholder="Email">
+      </div>
+      <!-- Break -->
+      <div class="col-12">
+        <select name="category" id="category">
+          <option value="">- Message Type -</option>
+          <option value="1">Sponsorship</option>
+          <option value="1">Question</option>
+          <option value="1">Comment</option>
+        </select>
+      </div>
+      <!-- Break -->
+      <div class="col-12">
+        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+      </div>
+      <!-- Break -->
+      <div class="col-12">
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" class="primary"></li>
+          <li><input type="reset" value="Reset"></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</section>
